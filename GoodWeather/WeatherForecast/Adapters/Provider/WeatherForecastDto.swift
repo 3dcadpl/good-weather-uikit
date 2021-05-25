@@ -1,4 +1,4 @@
-struct ResponseDto: Decodable {
+struct WeatherForecastDto: Decodable {
     
     let city: CityDto
     let forecast: [DayForecastDto]

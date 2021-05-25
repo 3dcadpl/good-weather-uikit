@@ -1,6 +1,5 @@
-struct Forecast {
+struct WeatherForecast {
     
-    let id: Int
     let city: String
     let forecast: [DayForecast]
     

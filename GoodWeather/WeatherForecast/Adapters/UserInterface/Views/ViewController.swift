@@ -1,21 +1,14 @@
-//
-//  ViewController.swift
-//  GoodWeather
-//
-//  Created by Paweł Andrzejewski on 24/05/2021.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let provider = URLSessionForecastProvider()
-        provider.getForecast(for: "warsaw", callback: onForecastLoaded)
+        let provider = URLSessionWeatherProvider()
+        provider.getWeatherForecast(for: "warsaw", callback: onForecastLoaded)
     }
 
-    private func onForecastLoaded(result: Result<Forecast, ForecastProviderError>) {
+    private func onForecastLoaded(result: Result<WeatherForecast, WeatherProviderError>) {
         DispatchQueue.main.async {
             switch result {
             case .success(let forecast):
@@ -28,4 +21,3 @@ class ViewController: UIViewController {
     }
     
 }
-

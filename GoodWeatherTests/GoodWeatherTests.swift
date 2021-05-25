@@ -1,10 +1,3 @@
-//
-//  GoodWeatherTests.swift
-//  GoodWeatherTests
-//
-//  Created by Paweł Andrzejewski on 24/05/2021.
-//
-
 import XCTest
 @testable import GoodWeather
 
