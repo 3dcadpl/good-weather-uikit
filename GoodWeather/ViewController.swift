@@ -11,9 +11,21 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let provider = URLSessionForecastProvider()
+        provider.getForecast(for: "warsaw", callback: onForecastLoaded)
     }
 
-
+    private func onForecastLoaded(result: Result<Forecast, ForecastProviderError>) {
+        DispatchQueue.main.async {
+            switch result {
+            case .success(let forecast):
+                print(forecast.city)
+            case .failure(let error):
+                print(error)
+            }
+        }
+       
+    }
+    
 }
 
