@@ -28,6 +28,7 @@
 		A841C2CC265BF08800A71B30 /* DayForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841C2CB265BF08800A71B30 /* DayForecastViewModel.swift */; };
 		A841C2CE265BF11300A71B30 /* WeatherForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841C2CD265BF11300A71B30 /* WeatherForecastViewModel.swift */; };
 		A8E31397265CB99F000595BB /* FakeWeatherProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E31396265CB99F000595BB /* FakeWeatherProvider.swift */; };
+		A8E3139A265CCCFD000595BB /* IconMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E31399265CCCFD000595BB /* IconMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		A841C2CB265BF08800A71B30 /* DayForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayForecastViewModel.swift; sourceTree = "<group>"; };
 		A841C2CD265BF11300A71B30 /* WeatherForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastViewModel.swift; sourceTree = "<group>"; };
 		A8E31396265CB99F000595BB /* FakeWeatherProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeWeatherProvider.swift; sourceTree = "<group>"; };
+		A8E31399265CCCFD000595BB /* IconMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		A841C2B0265BD3DE00A71B30 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A8E31399265CCCFD000595BB /* IconMapper.swift */,
 				A841C284265BD33C00A71B30 /* ViewController.swift */,
 				A841C286265BD33C00A71B30 /* Main.storyboard */,
 				A841C28B265BD33E00A71B30 /* LaunchScreen.storyboard */,
@@ -368,6 +371,7 @@
 				A841C2CC265BF08800A71B30 /* DayForecastViewModel.swift in Sources */,
 				A841C2C0265BD90500A71B30 /* WeatherDto.swift in Sources */,
 				A8E31397265CB99F000595BB /* FakeWeatherProvider.swift in Sources */,
+				A8E3139A265CCCFD000595BB /* IconMapper.swift in Sources */,
 				A841C2BE265BD85C00A71B30 /* TemperaturaDto.swift in Sources */,
 				A841C2B8265BD58C00A71B30 /* WeatherForecastDto.swift in Sources */,
 				A841C2C2265BDB7F00A71B30 /* DayForecast.swift in Sources */,
