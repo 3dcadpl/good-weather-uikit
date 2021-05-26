@@ -1,0 +1,5 @@
+protocol Task {
+    
+    func onComplete()
+    
+}

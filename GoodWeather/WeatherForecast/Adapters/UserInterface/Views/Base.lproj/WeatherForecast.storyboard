@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tgL-UE-Nsb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tgL-UE-Nsb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -39,7 +39,6 @@
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="onShowDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zkh-j8-8cR"/>
                                     <segue destination="Auw-a5-LZL" kind="show" identifier="showDetails" id="3cS-By-bVw"/>
                                 </connections>
                             </button>
@@ -116,7 +115,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dayForecastCell" id="inI-hA-rQJ" customClass="DayForecastCell" customModule="GoodWeather" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="132.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="132.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="inI-hA-rQJ" id="jbO-RT-lDk">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="132.5"/>
@@ -206,7 +205,7 @@
             <color red="0.13400000333786011" green="0.65399998426437378" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="TextColor">
-            <color red="1" green="0.70789196204455718" blue="0.011153906239885658" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="1" green="0.70800000429153442" blue="0.010999999940395355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

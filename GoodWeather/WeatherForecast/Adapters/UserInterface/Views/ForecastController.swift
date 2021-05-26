@@ -1,6 +1,6 @@
 import UIKit
 
-class ForecastController: UIViewController {
+class ForecastController: UIViewController, Task {
 
     @IBOutlet weak var cityTextField: UITextField!
     @IBOutlet weak var weatherImageView: UIImageView!
@@ -12,6 +12,7 @@ class ForecastController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.refreshWeatherDelegate = self
         title = "Good Weather"
         reset()
     }
@@ -19,20 +20,25 @@ class ForecastController: UIViewController {
     @IBAction func onRefresh(_ sender: UIButton) {
         if let city = cityTextField.text, !city.isEmpty {
             cityTextField.endEditing(true)
-            viewModel.refreshWeatherForecast(for: city, callback: updateView)
+            viewModel.refreshWeatherForecast(for: city)
         }
     }
-    
-    @IBAction func onShowDetails(_ sender: UIButton) {
-    }
-    
+
     private func reset() {
         descriptionLabel.text?.removeAll()
         temperatureLabel.text?.removeAll()
         pressureLabel.text?.removeAll()
     }
     
-    private func updateView() {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetails" {
+            if let forecastDetailsController = segue.destination as? ForecastDetailsViewController {
+                forecastDetailsController.viewModel = viewModel
+            }
+        }
+    }
+    
+    func onComplete() {
         DispatchQueue.main.async { [self] in
             if viewModel.refreshFailed {
                 reset()
@@ -41,18 +47,11 @@ class ForecastController: UIViewController {
                 return
             }
             if let dayForecast = viewModel.forecast.first {
+                cityTextField.text = viewModel.cityName
                 weatherImageView.image = UIImage(systemName: dayForecast.icon)
                 descriptionLabel.text = dayForecast.description
                 temperatureLabel.text = dayForecast.temperature
                 pressureLabel.text = dayForecast.pressure
-            }
-        }
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showDetails" {
-            if let forecastDetailsController = segue.destination as? ForecastDetailsViewController {
-                forecastDetailsController.viewModel = viewModel
             }
         }
     }

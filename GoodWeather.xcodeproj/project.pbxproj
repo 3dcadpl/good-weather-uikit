@@ -34,6 +34,7 @@
 		A8E313A3265CFFD3000595BB /* ForecastDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E313A2265CFFD3000595BB /* ForecastDetailsViewController.swift */; };
 		A8E313A5265D0563000595BB /* DayForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E313A4265D0563000595BB /* DayForecastCell.swift */; };
 		A8E313A7265D0C25000595BB /* GetWeatherFailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E313A6265D0C25000595BB /* GetWeatherFailed.swift */; };
+		B2457A13265E282100B8EDE9 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2457A12265E282100B8EDE9 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		A8E313A2265CFFD3000595BB /* ForecastDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDetailsViewController.swift; sourceTree = "<group>"; };
 		A8E313A4265D0563000595BB /* DayForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayForecastCell.swift; sourceTree = "<group>"; };
 		A8E313A6265D0C25000595BB /* GetWeatherFailed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWeatherFailed.swift; sourceTree = "<group>"; };
+		B2457A12265E282100B8EDE9 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 		A841C2B1265BD40500A71B30 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B2457A12265E282100B8EDE9 /* Task.swift */,
 				A841C2CB265BF08800A71B30 /* DayForecastViewModel.swift */,
 				A841C2CD265BF11300A71B30 /* WeatherForecastViewModel.swift */,
 			);
@@ -391,6 +394,7 @@
 				A8E3139F265CD813000595BB /* GetWeatherUseCase.swift in Sources */,
 				A8E313A3265CFFD3000595BB /* ForecastDetailsViewController.swift in Sources */,
 				A841C285265BD33C00A71B30 /* ForecastController.swift in Sources */,
+				B2457A13265E282100B8EDE9 /* Task.swift in Sources */,
 				A8E313A1265CF00B000595BB /* ApplicationFactory.swift in Sources */,
 				A841C281265BD33C00A71B30 /* AppDelegate.swift in Sources */,
 				A841C2C8265BDD4000A71B30 /* WeatherForecastProviderError.swift in Sources */,
@@ -514,7 +518,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -569,7 +573,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
